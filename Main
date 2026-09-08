@@ -1,0 +1,34 @@
+public class Ex03Session09Main {
+    public static void main(String[] args) {
+        Ex03Session09 student1 = new Ex03Session09(
+                "SV001",
+                "Nguyễn Văn An",
+                20,
+                3.5
+        );
+        Ex03Session09 student2 = new Ex03Session09(
+                "SV002",
+                "Trần Thị Bình",
+                21,
+                3.8
+        );
+        Ex03Session09 student3 = new Ex03Session09(
+                "SV003",
+                "Lê Văn Cường",
+                19,
+                3.2
+        );
+        Ex03Session09[] students = {
+                student1,
+                student2,
+                student3
+        };
+        System.out.println("===== DANH SÁCH SINH VIÊN =====");
+
+        for (int i = 0; i < students.length; i++) {
+            System.out.println("Sinh viên thứ " + (i + 1));
+            students[i].printInfo();
+        }
+        System.out.println("Tổng số sinh viên đã tạo: " + Ex03Session09.getCount());
+    }
+}
